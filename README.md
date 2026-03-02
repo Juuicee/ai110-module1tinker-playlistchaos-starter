@@ -111,3 +111,21 @@ If you finish early or want an extra challenge, try one of these:
 - Stay curious. The unpredictability is intentional and part of the experience.
 
 When you finish, Playlist Chaos will feel more predictable, and you will have taken your first steps into AI-assisted debugging.
+
+### Summary : Debugging with AI in Playlist Chaos
+
+# Overview
+
+The core overview of this activity was understanding how application state and logic flow across multiple files. Features like playlist assignment, search, Lucky Pick, and statistics all depend on shared data structures and conditional logic. Students needed to recognize how a single user interaction in the Streamlit interface connects to functions in playlist_logic.py, and how small logic decisions can directly impact visible behavior in the app.
+
+# Where Students Are Most Likely to Struggle
+
+Students are most likely to struggle with tracing how data moves through the app and identifying where state is updated or misused. It can be difficult to connect unexpected UI behavior to a specific conditional statement or list mutation in another file. Issues like mmisplaced if/elif branches can make a small bug feel much more complex than it actually is.
+
+# Where AI Was Helpful vs. Misleading
+
+AI was especially helpful when explaining what a highlighted block of code was doing such as how lists were being modified. It worked best when used to understand behavior before attempting changes. However, it could be misleading when it confidently suggested large refactors or fixes that changed more logic than intended or did not fully match what was happening in the running app. Treating AI responses as hypotheses rather than final answers was essential.
+
+# How I Would Guide a Student Without Giving the Answer
+
+Instead of giving the solution, I would ask the student to clearly state one specific expectation and then trace where that value is created, checked, and updated in the code. I would prompt them to compare their mental model of the rule to the actual conditionals and state updates in the program. This approach helps them identify mismatches independently while strengthening their debugging skills before checking with AI.
